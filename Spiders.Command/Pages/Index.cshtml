@@ -1,0 +1,49 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Send Commands";
+}
+
+<div style="text-align:center">
+    <h3>Send Commands</h3>
+    <form id="spiderform" method="post" novalidate>
+        <div class="col-sm-8 offset-sm-2">
+            <div class="card card-body">
+                <div class="row">
+                    <div class="col-md-3 offset-md-1">
+                        <label asp-for="Input.Input1"></label>
+                    </div>
+                    <div class="col-md-7 offset-md-1">
+                        <input asp-for="Input.Input1" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 offset-md-1">
+                        <label asp-for="Input.Input2"></label>
+                    </div>
+                    <div class="col-md-7 offset-md-1">
+                        <input asp-for="Input.Input2" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 offset-md-1">
+                        <label asp-for="Input.Input3"></label>
+                    </div>
+                    <div class="col-md-7 offset-md-1">
+                        <input asp-for="Input.Input3" />
+                    </div>
+                </div>
+                <div class="row">
+                    &nbsp;
+                </div>
+                <p>Final position : @Html.DisplayFor(modelItem => Model.Result)</p>
+            </div>
+        </div>
+        <br /><br />
+        <div style="clear:both">
+
+            <p align="center"><input type="submit" value="submit" /></p>
+        </div>
+
+    </form>
+</div>

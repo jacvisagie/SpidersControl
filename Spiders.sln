@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spiders.Command", "Spiders.Command\Spiders.Command.csproj", "{4BE0CA35-747C-45C7-B532-15822808B530}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spiders.Test", "Spiders.Test\Spiders.Test.csproj", "{E2915552-0FC3-42B0-97EF-467CB42BF90C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BE0CA35-747C-45C7-B532-15822808B530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BE0CA35-747C-45C7-B532-15822808B530}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BE0CA35-747C-45C7-B532-15822808B530}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BE0CA35-747C-45C7-B532-15822808B530}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2915552-0FC3-42B0-97EF-467CB42BF90C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2915552-0FC3-42B0-97EF-467CB42BF90C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2915552-0FC3-42B0-97EF-467CB42BF90C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2915552-0FC3-42B0-97EF-467CB42BF90C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {71BD61E7-9338-4A4E-986F-038C3C56C7F4}
+	EndGlobalSection
+EndGlobal
