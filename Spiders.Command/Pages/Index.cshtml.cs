@@ -23,7 +23,7 @@ namespace Spiders.Command.Pages
 
         public string Result { get; set; }
 
-        public async Task<IActionResult> OnGetAsync()
+        public IActionResult OnGet()
         {
             return Page();
         }
@@ -79,7 +79,7 @@ namespace Spiders.Command.Pages
             return success;
         }
 
-        public async Task<IActionResult> OnPostAsync(string action)
+        public IActionResult OnPost(string action)
         {
             var success = GetPosition(Input.Input1, Input.Input2, Input.Input3);
 

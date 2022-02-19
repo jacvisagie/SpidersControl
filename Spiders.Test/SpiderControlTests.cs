@@ -9,7 +9,7 @@ namespace Spiders.Test
     public class SpiderControlTests
     {
         [Fact]
-        public async Task Test_Post_Input_Correct_Pass()
+        public void Test_Post_Input_Correct_Pass()
         {
             //Arrange
             var controller = new IndexModel()
@@ -25,14 +25,14 @@ namespace Spiders.Test
             var OutputStr1 = "5 7 Right";
 
             //Act
-            _ = await controller.OnPostAsync("Submit");
+            _ = controller.OnPost("Submit");
 
             //Assert
             Assert.Equal(OutputStr1, controller.Result);
         }
 
         [Fact]
-        public async Task Test_Post_Input_InCorrect_Input_Fail()
+        public void Test_Post_Input_InCorrect_Input_Fail()
         {
             //Arrange
             var controller = new IndexModel()
@@ -48,14 +48,14 @@ namespace Spiders.Test
             var OutputStr1 = "5 7 Right";
 
             //Act
-            _ = await controller.OnPostAsync("Submit");
+            _ = controller.OnPost("Submit");
 
             //Assert
             Assert.NotEqual(OutputStr1, controller.Result);
         }
 
         [Fact]
-        public async Task Test_Post_Input_InCorrect_Orrientation_Fail()
+        public void Test_Post_Input_InCorrect_Orrientation_Fail()
         {
             //Arrange
             var controller = new IndexModel()
@@ -71,14 +71,14 @@ namespace Spiders.Test
             var OutputStr1 = "Spider nav failed - Spider journey input data incorrect or went off grid.";
 
             //Act
-            _ = await controller.OnPostAsync("Submit");
+            _ = controller.OnPost("Submit");
 
             //Assert
             Assert.Equal(OutputStr1, controller.Result);
         }
 
         [Fact]
-        public async Task Test_Post_Input_StartPosision_Offgrid_Fail()
+        public void Test_Post_Input_StartPosision_Offgrid_Fail()
         {
             //Arrange
             var controller = new IndexModel()
@@ -94,7 +94,7 @@ namespace Spiders.Test
             var OutputStr1 = "Spider nav failed - Spider journey input data incorrect or went off grid.";
 
             //Act
-            _ = await controller.OnPostAsync("Submit");
+            _ = controller.OnPost("Submit");
 
             //Assert
             Assert.Equal(OutputStr1, controller.Result);
@@ -102,7 +102,7 @@ namespace Spiders.Test
         }
 
         [Fact]
-        public async Task Test_Post_Input_EndPosision_Offgrid_Fail()
+        public void Test_Post_Input_EndPosision_Offgrid_Fail()
         {
             //Arrange
             var controller = new IndexModel()
@@ -118,14 +118,14 @@ namespace Spiders.Test
             var OutputStr1 = "Spider nav failed - Spider journey input data incorrect or went off grid.";
 
             //Act
-            _ = await controller.OnPostAsync("Submit");
+            _ = controller.OnPost("Submit");
 
             //Assert
             Assert.Equal(OutputStr1, controller.Result);
         }
 
         [Fact]
-        public async Task Test_Post_InputStr1_Null_Fail()
+        public void Test_Post_InputStr1_Null_Fail()
         {
             //Arrange
             var controller = new IndexModel()
@@ -141,7 +141,7 @@ namespace Spiders.Test
             var OutputStr1 = "Spider nav failed - Null input";
 
             //Act
-            _ = await controller.OnPostAsync("Submit");
+            _ = controller.OnPost("Submit");
 
             //Assert
             Assert.Equal(OutputStr1, controller.Result);
@@ -149,7 +149,7 @@ namespace Spiders.Test
         }
 
         [Fact]
-        public async Task Test_Post_InputStr2_Null_Fail()
+        public void Test_Post_InputStr2_Null_Fail()
         {
             //Arrange
             var controller = new IndexModel()
@@ -165,7 +165,7 @@ namespace Spiders.Test
             var OutputStr1 = "Spider nav failed - Null input";
 
             //Act
-            _ = await controller.OnPostAsync("Submit");
+            _ = controller.OnPost("Submit");
 
             //Assert
             Assert.Equal(OutputStr1, controller.Result);
@@ -173,7 +173,7 @@ namespace Spiders.Test
         }
 
         [Fact]
-        public async Task Test_Post_InputStr3_Null_Fail()
+        public void Test_Post_InputStr3_Null_Fail()
         {
             //Arrange
             var controller = new IndexModel()
@@ -189,7 +189,7 @@ namespace Spiders.Test
             var OutputStr1 = "Spider nav failed - Null input";
 
             //Act
-            _ = await controller.OnPostAsync("Submit");
+            _ = controller.OnPost("Submit");
 
             //Assert
             Assert.Equal(OutputStr1, controller.Result);
